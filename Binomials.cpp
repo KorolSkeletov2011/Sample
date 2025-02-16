@@ -14,7 +14,7 @@ int bp(int a, int n) {
 }
 
 int binm(int n, int k) {
-    if (k > n || n < 0 || k < 0) return 0;
+    if (k > n || k < 0) return 0;
     return fact[n] * 1ll * invfact[k] % MOD * 1ll * invfact[n - k] % MOD;
 }
 
